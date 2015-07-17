@@ -266,7 +266,7 @@ def get_encrypted_password(password, hashtype='sha512', salt=None):
         'sha512':   '6',
     }
 
-    hastype = hashtype.lower()
+    hashtype = hashtype.lower()
     if hashtype in cryptmethod:
         if salt is None:
             r = SystemRandom()
